@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Load random picsum images</title>
+</head>
+<body>
+  Load random picsum images
+  <div>
+    <img src="https://picsum.photos/200/300?sig=${Math.random()}&nocache=<?php echo microtime(); ?>" >
+    <img src="https://picsum.photos/200/300?sig=${Math.random()+1}&nocache=<?php echo microtime(); ?>">
+    <img src="https://picsum.photos/200/300?sig=${Math.random()+3}&nocache=<?php echo microtime(); ?>">
+    <img src="https://picsum.photos/200/300?sig=${Math.random()+4}&nocache=<?php echo microtime(); ?>">
+    <img src="https://picsum.photos/200/300?sig=${Math.random()+5}&nocache=<?php echo microtime(); ?>">
+  </div>
+</body>
+</html>
